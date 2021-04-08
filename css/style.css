@@ -6,23 +6,23 @@ Par Dumbo Marie
 *
 {
   font-family: Didot;
-  margin-left: 20px;
   text-align: justify;
 }
 
 
-header
+iframe
 {
+  width:100%;
+  height: 320px;
   background-color: #E6B4B4;
+  border: none;
 }
 
 
 footer
 {
-  background-color: #E6B4B4;
   column-count: 2;
-  padding: 30px;
-  margin-top: 30px;
+  padding: 70px;
 }
 
 #logo
@@ -35,10 +35,12 @@ footer
 #navigation
 {
   display: inline-block;
-  margin: 50px;
   background-color: #E63131;
   list-style: none;
   padding-right: 50px;
+  position: absolute;
+  top: 50px;
+  margin-left: 100px;
 }
 
 
