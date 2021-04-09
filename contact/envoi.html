@@ -4,21 +4,38 @@
     <meta charset="utf-8">
     <meta name="author" content="Dumbo Marie">
     <meta name="Descritpion" content="HNinstitut formation Full-stack JAVA DevOps, HTML Project">
-    <link rel="shortcut icon" href="../images/logo.jpeg" sizes= "16x16">
+    <link rel="shortcut icon" href="./images/logo.jpeg" sizes= "16x16">
     <title> My branding </title>
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   </head>
 
   <body>
-    <iframe src="../header.html"> L'ifram de navigation ne fonctionne pas sur votre navigateur </iframe>
+    <div class="container-fluid">
+      <header class="row bg-danger">
+        <iframe class="col-xs-12" src="../header.html"> L'ifram de navigation ne fonctionne pas sur votre navigateur </iframe>
+      </header>
+    </div>
 
 
-    <main>
+    <main  class="container">
       <h1> Votre message est bien envoyé ! Merci </h1>
     </main>
 
 
-    <iframe src="../footer.html" > L'ifram de pied-de-page ne fonctionne pas sur votre navigateur </iframe>
-  </<body>
+    <footer class="row bg-danger">
+      <div class="row bg-danger">
+        <iframe class="col-xs-12" src="../footer.html" > L'ifram de pied-de-page ne fonctionne pas sur votre navigateur </iframe>
+      </div>
+    </footer>
+  </body>
 
 </html>

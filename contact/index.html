@@ -6,41 +6,62 @@
     <meta name="Descritpion" content="HNinstitut formation Full-stack JAVA DevOps, HTML Project">
     <link rel="shortcut icon" href="../images/logo.jpeg" sizes= "16x16">
     <title> My branding </title>
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   </head>
 
+
   <body>
-    <iframe src="../header.html"> L'ifram de navigation ne fonctionne pas sur votre navigateur </iframe>
+    <div class="container-fluid">
+      <header class="row bg-danger">
+        <iframe class="col-xs-12" src="../header.html"> L'ifram de navigation ne fonctionne pas sur votre navigateur </iframe>
+      </header>
+    </div>
 
-
-    <main>
-      <h1> Nous contacter </h1>
-      <section class="despict">
-        <h2> Se rendre dans nos locaux </h2>
-        <p>
-          Nous somme situé aux <address> 14 aveue Machin Truc - 76000 Rouen </address> <br>
-          Nous sommes à 100 m de l'arrêt de métro <em> Théatre des arts </em> <br>
+    <main class="container">
+      <article class="row">
+        <h1> Nous contacter </h1>
+        <section class="col-xs-6">
+          <h2> Se rendre dans nos locaux </h2>
+          <p>
+            Nous somme situé aux : <address> 14 aveue Machin Truc - 76000 Rouen </address>
+            Nous sommes à 100 m de l'arrêt de métro <em> Théatre des arts </em>
+          </p>
+        </section>
+        <section class="col-xs-6">
           <img src="../images/Capture du 2021-04-08 10-47-49.png" alt="Carte" />
-        </p>
-      </section>
+        </section>
+      </article>
 
-      <section>
+      <acrticle class="row">
         <h2> Nous envoyer un message </h2>
-        <form action="envoi.html" method="post">
+        <form class="forme-group" action="envoi.html" method="post">
           <label for="Nom"> Nom </label>
-          <input type="text" name="Nom" id="Nom"> <br><br>
+          <input class="form-control" type="text" name="Nom" id="Nom"> <br><br>
           <label for="Prenom"> Prénom </label>
-          <input type="text" name="Prenom" id="Prenom"> <br><br>
+          <input class="form-control" type="text" name="Prenom" id="Prenom"> <br><br>
           <label for="email"> email </label>
-          <input type="text" name="email" id="email"> <br><br>
-          <textarea name="message" id="message" placeholder="Votre message et/ou votre question"></textarea><br><br>
-          <input type="submit" onclick="window.location.href = './envoi.html';" value="Envoyer">
+          <input class="form-control" type="text" name="email" id="email"> <br><br>
+          <textarea class="form-control" name="message" id="message" placeholder="Votre message et/ou votre question"></textarea><br><br>
+          <input class="btn btn-danger" type="submit" onclick="window.location.href = './envoi.html';" value="Envoyer">
         </form>
-      </section>
+      </article>
     </main>
 
 
-    <iframe src="../footer.html" > L'ifram de pied-de-page ne fonctionne pas sur votre navigateur </iframe>
-  </<body>
+    <footer class="row bg-danger">
+      <div class="row bg-danger">
+        <iframe class="col-xs-12" src="../footer.html" > L'ifram de pied-de-page ne fonctionne pas sur votre navigateur </iframe>
+      </div>
+    </footer>
+  </body>
 
 </html>

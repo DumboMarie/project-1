@@ -6,50 +6,77 @@
     <meta name="Descritpion" content="HNinstitut formation Full-stack JAVA DevOps, HTML Project">
     <link rel="shortcut icon" href="../images/logo.jpeg" sizes= "16x16">
     <title> My branding </title>
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   </head>
 
+
   <body>
-    <iframe src="../header.html"> L'ifram de navigation ne fonctionne pas sur votre navigateur </iframe>
+    <div class="container-fluid">
+      <header class="row bg-danger">
+        <iframe class="col-xs-12" src="../header.html"> L'ifram de navigation ne fonctionne pas sur votre navigateur </iframe>
+      </header>
+    </div>
 
 
-    <main>
-      <h1> Les fondatateurs et dirigants de My branding </h1>
-      <section class="despict">
-      <p>
-        Fondatrice : Marie Dumbo <br>
-        <cite> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." </cite>
-        <img src="../images/IMG_0044.JPG" alt="photo fondatrice" height="430px">
-      </p>
-      </section>
+    <main class="container">
+      <h1> Les fondatateurs et dirigants de My branding </h1><br>
 
-      <section class="despict">
-      <p>
-        PDG : Valérie Truc <br>
-        <cite> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." </cite><br>
-        <img src="../images/woman-657753_1920.jpg" alt="photo PDG" height="430px">
-      </p>
-      </section>
+      <section class="row">
+        <p class="col-xs-8">
+          Fondatrice : Marie Dumbo <br>
+          <cite> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." </cite>
+        </p>
+        <div class="col-xs-4">
+          <img class="img-responsive" src="../images/IMG_0044.JPG" alt="photo fondatrice" height="430px">
+        </div>
+      </section><hr>
 
-      <section class="despict">
-      <p>
-        Responsable web : Abel Machin <br>
-        <cite> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." </cite>
-        <img src="../images/man-613601_1920.jpg" alt="photo respo web" height="430px">
-      </p>
-      </section>
+      <section class="row">
+        <div class="col-xs-4">
+          <img class="img-responsive" src="../images/woman-657753_1920.jpg" alt="photo PDG" height="430px">
+        </div>
+        <p class="col-xs-7">
+          PDG : Valérie Truc <br>
+          <cite> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." </cite><br>
+        </p>
+      </section><hr>
 
-      <section class="despict">
-      <p>
-        Responsable Artisique : Elisa Machin <br>
-        <cite> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." </cite>
-        <img src="../images/woman-1274056_1920.jpg" alt="photo repso art" height="430px">
-      </p>
-      </section>
+      <section class="row">
+        <p class="col-xs-7">
+          Responsable web : Abel Machin <br>
+          <cite> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." </cite>
+        </p>
+        <div class="col-xs-4">
+          <img class="img-responsive" src="../images/man-613601_1920.jpg" alt="photo respo web" height="430px">
+        </div>
+      </section><hr>
+
+      <section class="row">
+        <div class="col-xs-4">
+          <img class="img-responsive" src="../images/woman-1274056_1920.jpg" alt="photo repso art" height="430px">
+        </div>
+        <p class="col-xs-7">
+          Responsable Artisique : Elisa Machin <br>
+          <cite> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." </cite>
+        </p>
+      </section><br>
     </main>
 
 
-    <iframe src="../footer.html" > L'ifram de pied-de-page ne fonctionne pas sur votre navigateur </iframe>
+    <footer class="row bg-danger">
+      <div class="row bg-danger">
+        <iframe class="col-xs-12" src="../footer.html" > L'ifram de pied-de-page ne fonctionne pas sur votre navigateur </iframe>
+      </div>
+    </footer>
   </body>
 
 </html>

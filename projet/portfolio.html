@@ -6,28 +6,51 @@
     <meta name="Descritpion" content="HNinstitut formation Full-stack JAVA DevOps, HTML Project">
     <link rel="shortcut icon" href="../images/logo.jpeg" sizes= "16x16">
     <title> My branding </title>
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   </head>
 
+
   <body>
-    <iframe src="../header.html"> L'ifram de navigation ne fonctionne pas sur votre navigateur </iframe>
+    <div class="container-fluid">
+      <header class="row bg-danger">
+        <iframe class="col-xs-12" src="../header.html"> L'ifram de navigation ne fonctionne pas sur votre navigateur </iframe>
+      </header>
+    </div>
 
-
-    <main>
+    <main class="container">
       <h1> Notre portfolio </h1>
-      <p>
-        Voici quelques exemples de travaux récents sur lesquels My branding a travaillé <br>
-        <h2> Projet d'identité graphique compléte </h2>
-        <img src="../images/webex1.jpg" alt="Projet web" />
-        <h2> Photo pour projet de flyer </h2>
-        <img src="../images/photo3.jpg" alt="Projet Photo 1" />
-        <h2> Photo pour projet d'affiche </h2>
-        <img src="../images/fantasy-2767173_1920.jpg" alt="Projet Photo 2"/>
-      </p>
+      <p> Voici quelques exemples de travaux récents sur lesquels My branding à travaillé </p>
+      <h2> Projet d'identité graphique compléte </h2>
+      <div class="embed-responsive embed-responsive-16by9">
+        <img class="embed-responsive-item" src="../images/webex1.jpg" alt="Projet web" />
+      </div><hr>
+
+      <h2> Photo pour projet de flyer </h2>
+      <div class="embed-responsive embed-responsive-16by9">
+        <img class="embed-responsive-item" src="../images/photo3.jpg" alt="Projet Photo 1" />
+      </div><hr>
+
+      <h2> Photo pour projet d'affiche </h2>
+      <div class="embed-responsive embed-responsive-16by9">
+        <img class="embed-responsive-item" src="../images/fantasy-2767173_1920.jpg" alt="Projet Photo 2"/>
+      </div><hr>
     </main>
 
 
-    <iframe src="../footer.html" > L'ifram de pied-de-page ne fonctionne pas sur votre navigateur </iframe>
-  </<body>
+    <footer class="row bg-danger">
+      <div class="row bg-danger">
+        <iframe class="col-xs-12" src="../footer.html" > L'ifram de pied-de-page ne fonctionne pas sur votre navigateur </iframe>
+      </div>
+    </footer>
+  </body>
 
 </html>

@@ -6,40 +6,61 @@
     <meta name="Descritpion" content="HNinstitut formation Full-stack JAVA DevOps, HTML Project">
     <link rel="shortcut icon" href="../images/logo.jpeg" sizes= "16x16">
     <title> My branding </title>
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   </head>
 
+
   <body>
-    <iframe src="../header.html"> L'ifram de navigation ne fonctionne pas sur votre navigateur </iframe>
+    <div class="container-fluid">
+      <header class="row bg-danger">
+        <iframe class="col-xs-12" src="../header.html"> L'ifram de navigation ne fonctionne pas sur votre navigateur </iframe>
+      </header>
+    </div>
 
 
-    <main>
+    <main class="container">
       <h1> My branding </h1>
       <section class="despict">
-        <p>
+        <p class="text-justify">
           My branding est une société basée à New York, NY spécialisée dans la conception de sites Web.
           Nous vous gardons toujours à l'esprit. Nous savons que nos clients sont notre priorité n ° 1.
         </p>
 
         <h2> L'histoire </h2>
-        <h3> Les débuts </h3>
-        <p>
+        <h3 class="text-danger"> Les débuts </h3>
+        <p class="text-justify">
           My branding a été fondé par un mec que je ne connais pas vraiment.
           C'est juste pour mettre un peu d'espace entre les deux pour montrer à quoi ressemblerait la mise en page. Super? ...
           Quelque chose quelque chose, 1992 quelque chose quelque chose 2 personnes dans un garage quelque chose a découvert quelque chose d'énergie libre quelque chose.
         </p>
-        <h3> Période de croissance </h3>
-        <p>
+        <h3 class="text-danger"> Période de croissance </h3>
+        <p class="text-justify">
           My branding a connu une croissance massive pendant l'ère du boom de la dot-com et a réussi à éviter de s'écraser lorsque le reste du monde a paniqué.
           C'est parce que My branding est LA MEILLEURE ENTREPRISE DE JAMAIS.
         </p>
-        <h3> My branding aujourd'hui </h3>
-        <p> My branding fonctionne bien aujourd'hui. C'est ça. </p>
-        <img src="../images/about_supplier.jpg" alt="photo pro">
+        <h3 class="text-danger"> My branding aujourd'hui </h3>
+        <p class="text-justify"> My branding fonctionne bien aujourd'hui. C'est ça. </p>
+        <div class="embed-responsive embed-responsive-16by9">
+          <img class="embed-responsive-item" src="../images/about_supplier.jpg" alt="photo pro">
+        </div><br>
       </section>
     </main>
 
 
-    <iframe src="../footer.html" > L'ifram de pied-de-page ne fonctionne pas sur votre navigateur </iframe>
+    <footer class="row bg-danger">
+      <div class="row bg-danger">
+        <iframe class="col-xs-12" src="../footer.html" > L'ifram de pied-de-page ne fonctionne pas sur votre navigateur </iframe>
+      </div>
+    </footer>
   </body>
+
 </html>

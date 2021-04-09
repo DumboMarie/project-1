@@ -6,27 +6,47 @@
     <meta name="Descritpion" content="HNinstitut formation Full-stack JAVA DevOps, HTML Project">
     <link rel="shortcut icon" href="../images/logo.jpeg" sizes= "16x16">
     <title> My branding </title>
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   </head>
 
+
   <body>
-    <iframe src="../header.html"> L'ifram de navigation ne fonctionne pas sur votre navigateur </iframe>
+    <div class="container-fluid">
+      <header class="row bg-danger">
+        <iframe class="col-xs-12" src="../header.html"> L'ifram de navigation ne fonctionne pas sur votre navigateur </iframe>
+      </header>
+    </div>
 
 
-    <main>
+    <main class="container">
       <h1> Un service complet ! </h1>
       <p>
         Chez MBC, nous fournissons une gamme de services et de produits pour que votre entreprise fonctionne efficacement et sans heurts.
         Tous nos projets sont fait avec profesionalisme et créativité <br>
-        <img src="../images/paint-5699263_1920.jpg" alt="Créativité" width="960px"/> <br>
+        <div class="embed-responsive embed-responsive-4by3">
+          <img class="embed-responsive-item" src="../images/paint-5699263_1920.jpg" alt="Créativité" width="960px"/> <br>
+        </div><br>
         Pour en savoir plus :
-        <button onclick="window.location.href = './portfolio.html';"> Notre portfolio </button>
-        <button onclick="window.location.href = './ref.html';"> Nos références </button>
+        <button class="btn btn-danger" onclick="window.location.href = './portfolio.html';"> Notre portfolio </button>
+        <button class="btn btn-danger" onclick="window.location.href = './ref.html';"> Nos références </button>
       </p>
     </main>
 
 
-    <iframe src="../footer.html" > L'ifram de pied-de-page ne fonctionne pas sur votre navigateur </iframe>
-  </<body>
+    <footer class="row bg-danger">
+      <div class="row bg-danger">
+        <iframe class="col-xs-12" src="../footer.html" > L'ifram de pied-de-page ne fonctionne pas sur votre navigateur </iframe>
+      </div>
+    </footer>
+  </body>
 
 </html>

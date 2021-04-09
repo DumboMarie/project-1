@@ -6,54 +6,75 @@
     <meta name="Descritpion" content="HNinstitut formation Full-stack JAVA DevOps, HTML Project">
     <link rel="shortcut icon" href="./images/logo.jpeg" sizes= "16x16">
     <title> My branding </title>
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   </head>
 
 
   <body>
-      <iframe src="./header.html"> L'ifram de navigation ne fonctionne pas sur votre navigateur </iframe>
+    <div class="container-fluid">
+      <header class="row bg-danger">
+        <iframe class="col-xs-12" src="./header.html"> L'ifram de navigation ne fonctionne pas sur votre navigateur </iframe>
+      </header>
+    </div>
 
 
-    <main>
-      <article id="bienvenue">
+    <main class="container">
+      <article class="row">
         <h1> Bienvenue sur My branding ! </h1>
         <p> My branding vous aide à créer l'identité de votre marque. Une identité qui correspond à votre culture d'entreprise et qui vous démarquera ! </p>
       </article>
 
 
-      <article id="home">
-        <h2> Qu'est ce que my branding ? </h2>
-        <p>
-          Il s'agit vraiment de vous. Notre objectif est de vous aider à atteindre et à battre vos objectifs.
-          Lorsque vous réussissez, nous réussissons. C'est si simple.
-          Nous sommes une entreprise de conception graphique à service complet avec une passion pour la conception stratégique. <br>
-          <strong>Nous ne sommes pas…</strong> Une entreprise de design qui ne se soucie vraiment pas de votre succès.
-          Une entreprise avec un vendeur qui essaiera de tout vous vendre, y compris du ketchup, puis confie votre projet à un stagiaire qui travaille pour des cacahuètes. <br>
-          <strong>Nous sommes…</strong> Un groupe de créateur hautement qualifié avec beaucoup d'expérience professionnelle dans le monde réel.
-          Vous pouvez être sûr que le travail sera effectué de manière professionnelle.
-        </p>
-        <h3> Pour en savoir plus : </h3>
-        <p>
-          <button onclick="window.location.href = './service/index.html';"> Nos services </button>
-          <button onclick="window.location.href = './projet/portfolio.html';"> Notre portfolio </button>
-          <button onclick="window.location.href = './projet/ref.html';"> Nos références </button>
-        </p>
-        <h2> Actualité </h2>
-        <h3> Nous sommes là pour vous accompagner durant la crise sanitaire </h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,totam rem aperiam,
-          eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-        </p>
-        <a href="./us/news.html"> Plus d'actualité </a>
+      <article class="row">
+        <section class="col-xs-6">
+          <h2> Qu'est ce que my branding ? </h2>
+          <p>
+            Il s'agit vraiment de vous. Notre objectif est de vous aider à atteindre et à battre vos objectifs.
+            Lorsque vous réussissez, nous réussissons. C'est si simple.
+            Nous sommes une entreprise de conception graphique à service complet avec une passion pour la conception stratégique. <br>
+            <strong>Nous ne sommes pas…</strong> Une entreprise de design qui ne se soucie vraiment pas de votre succès.
+            Une entreprise avec un vendeur qui essaiera de tout vous vendre, y compris du ketchup, puis confie votre projet à un stagiaire qui travaille pour des cacahuètes. <br>
+            <strong>Nous sommes…</strong> Un groupe de créateur hautement qualifié avec beaucoup d'expérience professionnelle dans le monde réel.
+            Vous pouvez être sûr que le travail sera effectué de manière professionnelle.
+          </p>
+          <h3 class="text-danger"> Pour en savoir plus : </h3>
+          <p>
+            <button class="btn btn-danger" onclick="window.location.href = './service/index.html';"> Nos services </button>
+            <button class="btn btn-danger" onclick="window.location.href = './projet/portfolio.html';"> Notre portfolio </button>
+            <button class="btn btn-danger" onclick="window.location.href = './projet/ref.html';"> Nos références </button>
+          </p>
+        </section>
+
+        <section class="col-xs-6">
+          <h2> Actualité </h2>
+          <h3 class="text-danger"> Nous sommes là pour vous accompagner durant la crise sanitaire </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          </p>
+          <a href="./us/news.html"> Plus d'actualité </a>
+        </section>
       </article>
     </main>
 
-
-    <iframe src="./footer.html" > L'ifram de pied-de-page ne fonctionne pas sur votre navigateur </iframe>
-  </<body>
+    <footer class="row bg-danger">
+      <div class="row bg-danger">
+        <iframe class="col-xs-12" src="./footer.html" > L'ifram de pied-de-page ne fonctionne pas sur votre navigateur </iframe>
+      </div>
+    </footer>
+  </body>
 
 </html>

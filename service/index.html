@@ -6,17 +6,31 @@
     <meta name="Descritpion" content="HNinstitut formation Full-stack JAVA DevOps, HTML Project">
     <link rel="shortcut icon" href="../images/logo.jpeg" sizes= "16x16">
     <title> My branding </title>
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   </head>
 
+
   <body>
-    <iframe src="../header.html"> L'ifram de navigation ne fonctionne pas sur votre navigateur </iframe>
+    <div class="container-fluid">
+      <header class="row bg-danger">
+        <iframe class="col-xs-12" src="../header.html"> L'ifram de navigation ne fonctionne pas sur votre navigateur </iframe>
+      </header>
+    </div>
 
 
-    <main>
+    <main class="container">
       <section>
         <h1> Nos services </h1>
-        <p>
+        <p class="text-justify">
           Chez My branding, nous fournissons une gamme de services et de produits pour que votre entreprise fonctionne efficacement !
           Nouvelle entreprise ? Problème d'identité graphique ? Besoin d'une évolution graphique plus cohérente ? Besoin de vous démarquer ?
           My branding vous guidera tout au long du processus de création de votre identité de marque du début à la fin.
@@ -27,37 +41,43 @@
        <hr>
     </section>
 
-    <section class="despict" id="web">
-      <h2> Site web </h2>
-      <p>
-        My branding est spécialisé dans le design web.
-        Nous vous guiderons tout au long du processus de création de votre marque en ligne du début à la fin.
-        Nous hébergeons une gamme de services allant de la maquette initiale au site Web à part entière.
-        <img src="../images/webex2.jpg" alt="projet web" />
-      </p>
+    <section class="row">
+      <div class="col-xs-4">
+        <h2 id="web"> Site web </h2>
+        <p class="text-justify">
+          My branding est spécialisé dans le design web.
+          Nous vous guiderons tout au long du processus de création de votre marque en ligne du début à la fin.
+          Nous hébergeons une gamme de services allant de la maquette initiale au site Web à part entière.
+        </p>
+      </div>
+      <img class="col-xs-8" src="../images/webex2.jpg" alt="projet web" />
     </section>
     <hr>
 
-    <section class="despict" id="print">
-      <h2> Identité sur papier </h2>
-      <p>
-        pour vos affiches, vos flyers ou tout autre
-        <img src="../images/90923041-affiche-de-garage-vintage-hot-rod-.jpg" alt="projet affiche" />
-      </p>
+    <section class="row">
+      <img class="col-xs-8" src="../images/90923041-affiche-de-garage-vintage-hot-rod-.jpg" alt="projet affiche" />
+      <div  class="col-xs-4">
+        <h2 id="print"> Identité sur papier </h2>
+        <p class="text-justify"> Pour vos affiches, vos flyers ou tout autre </p>
+      </div>
     </section>
     <hr>
 
-     <section class="despict" id="brand">
-          <h2> Identité graphique </h2>
-          <p>
-            Nous pouvons créer votre identité graphique de A a Z. En cohérence avec vos projets, votre culture d'entreprise et vos valeur
-            <img src="../images/webex3.jpg" alt="projet affiche" />
-          </p>
-      </section>
-
+     <section class="row">
+       <div  class="col-xs-4">
+          <h2 id="brand"> Identité graphique </h2>
+          <p class="text-justify"> Nous pouvons créer votre identité graphique de A a Z. En cohérence avec vos projets, votre culture d'entreprise et vos valeur </p>
+        </div>
+        <img class="col-xs-8" src="../images/webex3.jpg" alt="projet affiche" />
+      </section><br>
     </main>
 
 
-    <iframe src="../footer.html" > L'ifram de pied-de-page ne fonctionne pas sur votre navigateur </iframe>
+    <footer class="row bg-danger">
+      <div class="row bg-danger">
+        <iframe class="col-xs-12" src="../footer.html" > L'ifram de pied-de-page ne fonctionne pas sur votre navigateur </iframe>
+      </div>
+    </footer>
   </body>
+
 </html>
